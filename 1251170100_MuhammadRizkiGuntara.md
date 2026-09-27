@@ -1,4 +1,34 @@
 # PENUGASAN TERSTRUKTUR: ALGORITMA DAN STRUKTUR DATA
+## Studi Kasus: Sistem Transaksi & Validasi Toko Buku Modern
+
+``` text
+Nama: Muhammad Rizki Guntara
+Kelas: 3D
+NIM: 1251170100
+```
+
+## Analisis Komponen
+### Variabel dan Tipe Data
+``` text
+  is_member: boolean
+  jumlah_buku: integer
+  total_awal: real
+  nominal_diskon: real 
+  diskon: integer
+  total_bayar: real
+```
+### Struktur Kontrol
+``` text
+Perulangan:
+1. REPEAT UNTIL total_awal < 0 OR jumlah_buku < 1
+
+Percabangan:
+1. IF  total_awal < 0 OR jumlah_buku < 1 THEN
+2. IF is_member = True THEN
+3. IF total_awal >= 200000 AND jumlah_buku >= 3 THEN
+4. IF total_awal >= 300000 THEN
+```
+
 
 ## Studi Kasus: Sistem Transaksi & Validasi Toko Buku Modern
 
