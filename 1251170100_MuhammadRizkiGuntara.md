@@ -52,6 +52,21 @@ ALGORITMA :
   |Output Nominal Diskon||||37500||||||||
   |Total Bayar||||||212500||||||
   |Output Total Bayar||||||212500||||||
+
+## Kasus B
+  |Langkah|is_member|jumlah_buku|total_awal|nominal_diskon|diskon|total_bayar|total_awal < 0|jumlah_buku < 1|is_member|total_awal >= 200000 AND jumlah_buku >= 3|total_awal >= 300000|
+  |---|---|---|---|---|---|---|---|---|---|---|---|
+  |Input|false|2|350000||||||||||
+  |Pengecekan Input IF|||||||false|false||||
+  |Pencekan Input Until|||||||false|false||||
+  |Pencekan Member|||||||||false|||
+  |Input Diskon|||||0|||||||
+  |pengecekan total awal|||||||||||true|
+  |Hitung Nominal Diskon||||17500||||||||
+  |Output Nominal Diskon||||17500||||||||
+  |Total Bayar||||||332500||||||
+  |Output Total Bayar||||||332500||||||
+
   
   
   
