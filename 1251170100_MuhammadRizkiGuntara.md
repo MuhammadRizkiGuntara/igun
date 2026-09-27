@@ -1,8 +1,8 @@
-#PENUGASAN TERSTRUKTUR: ALGORITMA DAN STRUKTUR DATA
+# PENUGASAN TERSTRUKTUR: ALGORITMA DAN STRUKTUR DATA
 
-##Studi Kasus: Sistem Transaksi & Validasi Toko Buku Modern
+## Studi Kasus: Sistem Transaksi & Validasi Toko Buku Modern
 
-
+```text
 PROGRAM Sistem Transaksi & Validasi Toko Buku Modern
 DEKLARASI : 
   is_member: boolean
@@ -20,8 +20,6 @@ ALGORITMA :
     ENDIF
   UNTIL total_awal < 0 OR jumlah_buku < 1
 
-  OUTPUT("input berhasil")
-
   IF is_member = True THEN 
     diskon ← 10
     IF total_awal >= 200000 AND jumlah_buku >= 3 THEN
@@ -38,11 +36,24 @@ ALGORITMA :
   OUTPUT (nominal_diskon)
   total_bayar ← total_awal - nominal_diskon
   OUTPUT (total_bayar)
+```
+# Trace Table 
 
-#Trace Table 
-
-##Kasus A
-  |Lankah|is_member|jumlah_buku|total_awal|nominal_diskon|diskon|total_bayar|
-  |Input|true|4|250000|0|0|0|
-
+## Kasus A
+  |Langkah|is_member|jumlah_buku|total_awal|nominal_diskon|diskon|total_bayar|total_awal < 0|jumlah_buku < 1|is_member|total_awal >= 200000 AND jumlah_buku >= 3|total_awal >= 300000|
+  |---|---|---|---|---|---|---|---|---|---|---|---|
+  |Input|true|4|250000||||||||||
+  |Pengecekan Input IF|||||||false|false||||
+  |Pencekan Input Until|||||||false|false||||
+  |Pencekan Member|||||||||true|||
+  |Input Diskon|||||10|||||||
+  |Cek Total Awal dan Jumlah Buku|||||15|||||true||
+  |Hitung Nominal Diskon||||37500||||||||
+  |Output Nominal Diskon||||37500||||||||
+  |Total Bayar||||||212500||||||
+  |Output Total Bayar||||||212500||||||
+  
+  
+  
+  
   
